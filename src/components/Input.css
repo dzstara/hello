@@ -1,0 +1,35 @@
+.Input {
+  display: flex;
+  align-items: stretch;
+  gap: 0.7em;
+  padding: 10px;
+}
+
+.Input > input {
+  flex: 1 0 auto;
+}
+
+.Input > input,
+.Input > button {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-border);
+  border-radius: 3px;
+  padding: 0.2em 0.5em;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+}
+
+.Input > input:focus {
+  border-color: white;
+}
+
+.Input > button {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Input > button:hover {
+  background: white;
+  border-color: white;
+  color: black;
+}

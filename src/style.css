@@ -1,0 +1,43 @@
+:root {
+  --font: "Inter", sans-serif;
+
+  --color-background: #18181b;
+  --color-text: #efeff1;
+  --color-text-subtle: #adadb8;
+  --color-text-error: rgb(204, 0, 0);
+  --color-border: #ddd;
+  --color-accent: #9146ff;
+  --color-border-subtle: #777;
+  --color-border-muted: #303032;
+}
+
+html,
+input,
+button {
+  font-family: var(--font);
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+html {
+  background: var(--color-background);
+  color: var(--color-text);
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: var(--color-text-error);
+}
